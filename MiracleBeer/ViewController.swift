@@ -37,6 +37,14 @@ class ViewController: UIViewController {
     //Calls this function when the tap is recognized.
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        
+        if img_beer_cheers.isHidden == false {
+            img_beer_cheers.isHidden = true
+            Lbl_thanks.isHidden = true
+            
+            stack1.isHidden = false 
+        }
+        
         view.endEditing(true)
     }
 
